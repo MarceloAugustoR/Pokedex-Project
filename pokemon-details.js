@@ -319,7 +319,7 @@ function displayPokemonDetails(pokemon) {
 
     // Define o endereço da imagem do Pokémon.
     // Aqui está usando os sprites animados da PokéAPI (formato GIF).
-    imageElement.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`;
+    imageElement.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}.png`;
 
     // Define o texto alternativo da imagem (alt).
     // Esse texto aparece se a imagem não carregar e também é usado por leitores de tela.
