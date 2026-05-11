@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.pokedexformygirl.heart</title>
+  <link rel="shortcut icon" href="https://img.pokemondb.net/sprites/home/normal/feebas.png" alt="Feebas" type="image/x-icon">
+  <link rel="stylesheet" href="style-home.css" />
+  <script src="pokemon.js" defer></script>
+  <script src="search.js" defer></script>
+</head>
+
+<body>
+  <main class="main">
+    <header class="header home">
+      <div class="container">
+        <div class="logo-wrapper">
+          <img src="https://img.pokemondb.net/sprites/home/normal/mimikyu.png" alt="Mimikyu">
+          <h1>Pokedex</h1>
+        </div>
+        <div class="search-wrapper">
+          <div class="search-wrap">
+            <img src="search.svg" alt="search icon" class="search-icon" />
+            <input type="text" class="search-input body3-fonts" placeholder="Search" id="search-input" />
+            <img src="cross.svg" alt="cross icon" class="search-close-icon" id="search-close-icon" />
+          </div>
+
+          <div class="gen-wrapper">
+            <div class="gen-wrap">
+              <!--<img src="./assets/generation.svg" alt="generation" class="gen-icon" id="gen-icon" />-->
+              <img src="https://img.pokemondb.net/sprites/home/normal/rotom.png" alt="generation" class="gen-icon"
+                id="gen-icon" />
+            </div>
+            <div class="gen-filter-wrapper">
+              <p class="body2-fonts">Select Generation:</p>
+              <div class="filter-wrap">
+                <div>
+                  <input type="radio" id="gen1" name="generation" value="1" checked/>
+                  <label for="gen1" class="body3-fonts">Gen I (Kanto)
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/ninetales.png" alt="Ninetales">
+                    <!--<img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/ninetales.png" alt="Ninetales">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen2" name="generation" value="2" />
+                  <label for="gen2" class="body3-fonts">Gen II (Johto)
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/umbreon.png" alt="Umbreon">
+                    <!--<img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/umbreon.png" alt="Umbreon">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen3" name="generation" value="3" />
+                  <label for="gen3" class="body3-fonts">Gen III (Hoenn)
+                    <img src="https://img.pokemondb.net/sprites/home/normal/milotic.png" alt="Milotic">
+                    <!--<img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/milotic.png" alt="Milotic">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen4" name="generation" value="4" />
+                  <label for="gen4" class="body3-fonts">Gen IV (Sinnoh)
+                    <img src="https://img.pokemondb.net/sprites/home/normal/lucario-mega.png" alt="Lucario">
+                    <!--<img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/lucario.png" alt="Lucario">-->
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/rotom.png" alt="Rotom">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen5" name="generation" value="5" />
+                  <label for="gen5" class="body3-fonts">Gen V (Unova)
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/zoroark.png" alt="Zoroark">-->
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/zoroark.png" alt="Zoroark">
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/zoroark-hisuian.png" alt="Zoroark">
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/zoroark-hisuian.png" alt="Zoroark">
+                    <img src="https://img.pokemondb.net/sprites/legends-arceus/normal/zoroark-hisuian.png" alt="Zoroark">
+                    <img src="https://img.pokemondb.net/sprites/legends-arceus/shiny/zoroark-hisuian.png" alt="Zoroark">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen6" name="generation" value="6" />
+                  <label for="gen6" class="body3-fonts">Gen VI (Kalos)
+                    <!--<img src="https://img.pokemondb.net/sprites/scarlet-violet/normal/noibat.png" alt="Noibat">-->
+                    <img src="https://img.pokemondb.net/sprites/home/normal/noibat.png" alt="Noibat">
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen7" name="generation" value="7" />
+                  <label for="gen7" class="body3-fonts">Gen VII (Alola)
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/decidueye.png" alt="Decidueye">
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/mimikyu.png" alt="Mimikyu">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen8" name="generation" value="8" />
+                  <label for="gen8" class="body3-fonts">Gen VIII (Galar)
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/corviknight.png" alt="Corviknight">-->
+                    <img src="https://img.pokemondb.net/sprites/home/normal/corviknight-gigantamax.png" alt="Corviknight">
+                    <!--<img src="https://img.pokemondb.net/sprites/home/shiny/corviknight.png" alt="Corviknight">
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/corviknight-gigantamax.png" alt="Corviknight">-->
+
+                    <!--<img src="https://img.pokemondb.net/sprites/home/normal/urshifu-single-strike.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/urshifu-rapid-strike.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/urshifu-rapid-strike-gigantamax.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/normal/urshifu-single-strike-gigantamax.png" alt="Urshifu">
+
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/urshifu-single-strike.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/urshifu-rapid-strike.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/urshifu-rapid-strike-gigantamax.png" alt="Urshifu">
+                    <img src="https://img.pokemondb.net/sprites/home/shiny/urshifu-single-strike-gigantamax.png" alt="Urshifu">-->
+                  </label>
+                </div>
+                <div>
+                  <input type="radio" id="gen9" name="generation" value="9" />
+                  <label for="gen9" class="body3-fonts">Gen IX (Paldea)
+                    <img src="https://img.pokemondb.net/sprites/home/normal/chien-pao.png" alt="Chien-Pao">
+                    <!--<img src="https://img.pokemondb.net/sprites/home/shiny/chien-pao.png" alt="Chien-Pao">-->
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mode-wrapper">
+            <div class="mode-wrap">
+              <div class="mode-filter-wrap">
+                <p class="body2-fonts">Choose type:</p>
+                <div>
+                  <input type="radio" id="normal" name="type" value="normal" checked />
+                  <label for="normal" class="body3-fonts">Normal</label>
+                </div>
+                <div>
+                  <input type="radio" id="shiny" name="type" value="shiny" />
+                  <label for="shiny" class="body3-fonts">Shiny</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sort-wrapper">
+            <div class="sort-wrap">
+              <div class="filter-wrap">
+                <p class="body2-fonts">Sort by:</p>
+                <div>
+                  <input type="radio" id="number" name="filters" value="number" checked />
+                  <label for="number" class="body3-fonts">Number</label>
+                </div>
+                <div>
+                  <input type="radio" id="name" name="filters" value="name" />
+                  <label for="name" class="body3-fonts">Name</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+    <section class="pokemon-list">
+      <div class="container">
+        <div class="list-wrapper">
+          <div class="list-item">
+            <div class="stats-wrap"></div>
+          </div>
+        </div>
+      </div>
+      <div id="not-found-message">Pokemon not found</div>
+    </section>
+  </main>
+</body>
+
+</html>
